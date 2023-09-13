@@ -40,7 +40,5 @@ public class Main {
         System.out.println("После пересыпки фруктов из fruitBox1 в fruitBox2:");
         System.out.println("Вес fruitBox1: " + fruitBox1.weight());
         System.out.println("Вес fruitBox2: " + fruitBox2.weight());
-
-
     }
 }
