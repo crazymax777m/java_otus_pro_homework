@@ -29,10 +29,6 @@ public class Box<T extends Fruit> {
             return;
         }
 
-//        if (!this.fruits.get(0).getClass().equals(anotherBox.fruits.get(0).getClass())) {
-//            return;
-//        }
-
         anotherBox.fruits.addAll(this.fruits);
         this.fruits.clear();
     }
