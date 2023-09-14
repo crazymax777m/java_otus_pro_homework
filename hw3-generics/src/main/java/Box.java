@@ -4,8 +4,13 @@ import java.util.List;
 public class Box<T extends Fruit> {
     private final List<T> fruits = new ArrayList<>();
 
+
     public void addFruit(T fruit) {
-        fruits.add(fruit);
+        if (fruit != null) {
+            fruits.add(fruit);
+        } else {
+            System.out.println("Нельзя добавить null в коробку.");
+        }
     }
 
     public double weight() {
@@ -17,10 +22,19 @@ public class Box<T extends Fruit> {
     }
 
     public boolean compare(Box<?> anotherBox) {
+        if (anotherBox == null) {
+            System.out.println("Ошибка: Сравниваемая коробка не может быть null.");
+            return false;
+        }
+
         return Math.abs(this.weight() - anotherBox.weight()) < 0.0001;
     }
 
-    public void transferFruitsToAnotherBox(Box<T> anotherBox) {
+    public void transferFruitsToAnotherBox(Box<? super T> anotherBox) {
+        if (anotherBox == null) {
+            return;
+        }
+
         if (this == anotherBox) {
             return;
         }

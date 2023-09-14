@@ -6,8 +6,12 @@ public class Main {
         Box<Fruit> fruitBox1 = new Box<>();
         Box<Fruit> fruitBox2 = new Box<>();
 
+        appleBox1.addFruit(null);
+
         appleBox1.addFruit(new Apple(0.2));
         appleBox1.addFruit(new Apple(0.3));
+
+        appleBox1.transferFruitsToAnotherBox(fruitBox1);
 
         appleBox2.addFruit(new Apple(0.5));
 
