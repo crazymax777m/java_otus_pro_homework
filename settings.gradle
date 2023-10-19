@@ -1,4 +1,6 @@
 rootProject.name = "java_otus_pro_homework"
 include("hw1-gradle")
 include 'hw3-generics'
+include 'hw5-annotations'
+include 'hw6-atm'
 
