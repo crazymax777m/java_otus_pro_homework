@@ -3,4 +3,5 @@ include("hw1-gradle")
 include 'hw3-generics'
 include 'hw5-annotations'
 include 'hw6-atm'
+include 'hw7-patterns'
 
