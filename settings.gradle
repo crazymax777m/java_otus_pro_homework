@@ -6,4 +6,5 @@ include 'hw6-atm'
 include 'hw7-patterns'
 include 'hw8-serialization'
 include 'hw9-jdbc'
+include 'hw10-jpql'
 
