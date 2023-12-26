@@ -8,4 +8,8 @@ include 'hw8-serialization'
 include 'hw9-jdbc'
 include 'hw10-jpql'
 include 'hw11-caching'
+include 'hw12-webServer'
+include 'hw13-di'
+include 'hw15-https'
+include 'hw16-threads'
 
