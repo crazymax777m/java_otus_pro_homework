@@ -12,4 +12,6 @@ include 'hw12-webServer'
 include 'hw13-di'
 include 'hw15-https'
 include 'hw16-threads'
+include 'hw17-threadSafeCollections'
+include 'hw18-multiprocessApplications'
 
